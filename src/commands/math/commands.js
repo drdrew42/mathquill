@@ -767,6 +767,7 @@ function bindCharBracketPair(open, ctrlSeq) {
   CharCmds[open] = bind(Bracket, L, open, close, ctrlSeq, end);
   CharCmds[close] = bind(Bracket, R, open, close, ctrlSeq, end);
 }
+bindCharBracketPair('|');
 bindCharBracketPair('(');
 bindCharBracketPair('[');
 bindCharBracketPair('{', '\\{');
